@@ -22,8 +22,8 @@ public class RottenOranges {
         int time = 0;
         while (!q.isEmpty()) {
             Point curr = q.remove();
-            for (int i = 0; i < directions.length; i++) {
-                Point p = new Point(curr.x + directions[i][0], curr.y + directions[i][1], curr.t + 1);
+            for (int[] direction : directions) {
+                Point p = new Point(curr.x + direction[0], curr.y + direction[1], curr.t + 1);
                 if (p.x >= 0 && p.x < r && p.y >= 0 && p.y < c && !visited[p.x][p.y] && grid[p.x][p.y] == 1) {
                     q.add(p);
                     visited[p.x][p.y] = true;
@@ -42,7 +42,7 @@ public class RottenOranges {
         return time;
     }
 
-    class Point {
+    static class Point {
         int x;
         int y;
         int t;
