@@ -13,6 +13,6 @@ public class Main {
 		System.out.println(stockSpanner.next(75)); // return 4, because the last 4 prices (including today's price of
 													// 75) were less than or equal to today's price.
 		System.out.println(stockSpanner.next(85)); // return 6
-		// Test comment
+		// Test comment 2
 	}
 }
