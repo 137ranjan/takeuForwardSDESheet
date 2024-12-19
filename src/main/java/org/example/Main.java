@@ -1,14 +1,12 @@
 package org.example;
 
-import java.util.Arrays;
-
-import org.example.stackqueue.MaximumOfMinimumForEveryWindow;
+import org.example.stackqueue.CelebrityProblem;
 
 public class Main {
 	public static void main(String[] args) {
-		int[] a = { 3, 3, 4, 2, 4 };
-		int[] result = MaximumOfMinimumForEveryWindow.maxMinWindow(a, a.length);
-		System.out.println(Arrays.toString(result));
-
+		int[][] mat = { { 0, 0, 0, 0 }, { 1, 1, 1, 0 }, { 1, 1, 0, 1 }, { 1, 0, 1, 1 } };
+		CelebrityProblem solution = new CelebrityProblem();
+		int result = solution.findCelebrity(mat);
+		System.out.println(result);
 	}
 }
