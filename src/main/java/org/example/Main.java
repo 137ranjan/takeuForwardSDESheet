@@ -1,11 +1,11 @@
 package org.example;
 
-import org.example.string.ReverseWordsInAString;
+import org.example.string.LongestPalindromicSubsequence;
 
 public class Main {
 	public static void main(String[] args) {
-		String s = "the sky is blue";
-		String result = ReverseWordsInAString.reverseWords(s);
+		String s = "badbd";
+		String result = LongestPalindromicSubsequence.longestPalindrome2(s);
 		System.out.println(result);
 	}
 }
