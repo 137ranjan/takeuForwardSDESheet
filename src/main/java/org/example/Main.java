@@ -1,15 +1,11 @@
 package org.example;
 
-import org.example.string.RomanToInteger;
+import org.example.string.StringToInteger;
 
 public class Main {
     public static void main(String[] args) {
-        String s = "MCMXCIV";
-        RomanToInteger solution = new RomanToInteger();
-        System.out.println(solution.romanToInt(s));
-
-        int number = 1994;
-        System.out.println(solution.intToRoman(1994));
-
+        String s = " -042";
+        StringToInteger solution = new StringToInteger();
+        System.out.println(solution.myAtoi(s));
     }
 }
