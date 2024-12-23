@@ -1,11 +1,10 @@
 package org.example;
 
-import org.example.string.StringToInteger;
+import org.example.string.LongestCommonPrefix;
 
 public class Main {
     public static void main(String[] args) {
-        String s = " -042";
-        StringToInteger solution = new StringToInteger();
-        System.out.println(solution.myAtoi(s));
+        String[] strs = {"flower", "flow", "flight"};
+        System.out.println(LongestCommonPrefix.longestCommonPrefix(strs));
     }
 }
